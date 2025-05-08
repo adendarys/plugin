@@ -1,16 +1,13 @@
 package main
 // #cgo CFLAGS: -fplugin=./attack.so
-// typedef int (\*intFunc) ();
+// typedef int (*intFunc) ();
 //
-// int
-// bridge_int_func(intFunc f)
-// {
-//      return f();
+// int bridge_int_func(intFunc f){
+//   return f();
 // }
 //
-// int fortytwo()
-// {
-//      return 42;
+// int fortytwo(){
+//   return 42;
 // }
 import "C"
 import "fmt"
